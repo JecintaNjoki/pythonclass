@@ -43,7 +43,7 @@ print(set1.difference(set2))
 nums1= {10, 11, 12}
 nums2 = {9, 11, 12}
 
-print( nums1.union(numbers2))
+print( nums1.union(nums2))
 
 #Remove all elements from a set
 # clear()
