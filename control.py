@@ -8,14 +8,16 @@ def odd_numbers():
     x= range(20)
     for i in x:
         if i % 2!=0:
-            print(i) 
+            print(i)
+
 def divisible_by_five():
     x= range(50)
     for i in x:
         if i % 5==0:
             print(f"{i}is divisible by 5")
         else :
-            print(f"{i} is not divisible by 5") 
+            print(f"{i} is not divisible by 5")
+
 def multiple_comparison():
     x = range(50)
     for i in x:
@@ -27,6 +29,7 @@ def multiple_comparison():
             print (f"{i}is divisible by 9")
         else: 
             print (f"{i}is divisible by 5,7,or 9")
+
 def odd_or_even():
     x =range (20)
     for i in x:
@@ -59,13 +62,14 @@ def continue_statement():
         print(x)
 #Write a function that uses while, if and continue statements to print 
 # all the even numbers between 0 and 50. 
-def all_even_nimbers():
+def all_even_numbers():
     x=0
     while x<=50:
         x+=1
         if x % 2==0:
             continue
         print(x)
+
 
     
 #Write a function that takes an integer argument and prints "Prime" 
@@ -75,6 +79,33 @@ def prime_numbers(i=7):
          print(f"{i}is a prime number")
     else:
          print(f"{i}is not prime number")
+
+start=1
+while (start <= 10):
+   if(start >= 2): 
+     i=2
+     if(start % i==0):
+         print("not a prime")
+         start +=1
+         break
+     else:
+         print("prime")
+#   print(start)
+#     start+=1
+def primenum():
+    if num < 2 :
+        return False
+    for i in range(2,num):
+        if (num % i==0):
+         return False
+    return True
+num=0
+while (num<=10):
+    if primenum(num):
+        print(num)
+    num+=1     
+    # elif num >=10:
+          
 
 #Write a function that takes a list of integers as input and prints 
 # the sum of all the even numbers in the list.
@@ -97,3 +128,8 @@ def divisible_by_3(num):
     print(sum)
 
 
+def primeNum(num):
+    if num < 2:
+        return False
+    
+    
